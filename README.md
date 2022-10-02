@@ -7,4 +7,5 @@ Para usar los codigos GitHub tienes que acceder a la tabla de comandos de tu ord
 Para acceder al cmd debes...
 1. Ir a al ícono de Windows y escribir cmd...
 
-![](
+![Foto](cmd.png)
+
