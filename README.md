@@ -2,11 +2,17 @@
 
 ## Apuntes GitHub
 
-Para usar los codigos GitHub tienes que acceder a la tabla de comandos de tu ordenador o también denominado **cmd**
+# Creación de un repositorio en GITHUB
 
-Para acceder al cmd debes...
-1. Ir a al ícono de Windows y escribir cmd...
+Primero de todo accedemos a la página de [Github](URL "https://github.com/")
+Después de crear e iniciar sesión en una cuenta, en el menu principal nos aparecerá un apartado dónde se puedan crear nuevos repositorios:
 
-![Foto](cmd.PNG)
+![Foto](Repositorio.jpg)
+
+Dándole click nos llevará a crear nuestro repositorio:
+
+![Foto](Repositorio2.PNG)
+
+
 
 
