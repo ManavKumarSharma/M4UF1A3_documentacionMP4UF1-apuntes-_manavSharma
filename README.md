@@ -74,8 +74,27 @@ Lista desordenada:
 - Titulo2
 + Titulo3
 
+## Para crear una secuencia de códigos HTML y poder copiarlos:
 
+![Fotos](HTML.PNG)
 
+### Resultado:
+
+```html
+<html>
+  <head>
+  </head> 
+</html>
+```
+
+## Para poner links o fotos:
+
+![Foto](Links.PNG)
+
+### Resultado:
+
+[Enclace a wikipedia](URL "https://es.wikipedia.org/wiki/Wikipedia:Portada")
+![Foto](1200px-Wikipedia-logo-v2.svg.png)
 
 
 
