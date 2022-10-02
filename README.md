@@ -1,8 +1,8 @@
 # M4UF1A3_documentacionMP4UF1_apuntes_manavSharma
 
-## Apuntes GitHub
+# Apuntes GitHub
 
-# Creación de un repositorio en GITHUB
+## Creación de un repositorio en GITHUB
 
 Primero de todo accedemos a la página de [Github](URL "https://github.com/")
 Después de crear e iniciar sesión en una cuenta, en el menu principal nos aparecerá un apartado dónde se puedan crear nuevos repositorios:
@@ -109,6 +109,7 @@ Lista desordenada:
 | Item3        | Lapices      | 50 euros     |
 
 
+# GitHUB y CMD:
 
 
 
