@@ -120,7 +120,7 @@ Para acceder al CMD debemos ir al **WINDOWS** y escribir CMD que es la ventana d
 
 ![](FotosApuntes/cmd.PNG)
 
-Una vez accedido, nos aparecerá una ventana con el símbolo del sistemade.
+Una vez accedido, nos aparecerá una ventana con el símbolo del sistema.
 
 ![](FotosApuntes/cmd2.PNG)
 
@@ -161,6 +161,8 @@ Para sincronizarlo debemos poner el comando _git init_, después con el comando 
 ![](FotosApuntes/cmd5.PNG)
 
 ![](FotosApuntes/archivoprueba.PNG)
+
+Finalmente hemos conseguido añadir un archivo con GIT desde el CMD sincronizando con GitHUB.
 
 # HTML:
 
