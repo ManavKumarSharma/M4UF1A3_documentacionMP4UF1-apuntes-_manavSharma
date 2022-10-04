@@ -7,7 +7,7 @@
 Primero de todo accedemos a la página de [Github](URL "https://github.com/")
 Después de crear e iniciar sesión en una cuenta, en el menu principal nos aparecerá un apartado dónde se puedan crear nuevos repositorios:
 
-![Foto](Repositorio.jpg)
+![Foto](Foto_apuntes/Repositorio.jpg)
 
 Dándole click nos llevará a crear nuestro repositorio:
 
