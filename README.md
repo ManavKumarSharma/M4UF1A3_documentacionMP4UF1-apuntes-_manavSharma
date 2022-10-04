@@ -164,6 +164,10 @@ En nuestro caso para utilizar html descargaremos [VISUAL STUDIO CODE](URL "https
 
 ```
 
+### RESULTADO:
+
+[FOTO](ApuntesHTML.PNG)
+
 
 
 
