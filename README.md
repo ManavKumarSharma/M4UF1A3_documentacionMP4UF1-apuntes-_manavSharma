@@ -7,11 +7,11 @@
 Primero de todo accedemos a la página de [Github](URL "https://github.com/")
 Después de crear e iniciar sesión en una cuenta, en el menu principal nos aparecerá un apartado dónde se puedan crear nuevos repositorios:
 
-![Foto](Foto_apuntes/Repositorio.jpg)
+![Foto](FotosApuntes/Repositorio.jpg)
 
 Dándole click nos llevará a crear nuestro repositorio:
 
-![Foto](Repositorio2.PNG)
+![Foto](FotosApuntes/Repositorio2.PNG)
 
 Nos aparecerá diferentes apartados:
 
@@ -22,11 +22,11 @@ Nos aparecerá diferentes apartados:
 
 Una vez creado el repositorio podemos interactuar con él añadiendo archivos o configurando documentos desde la propia usando el lenguaje de MarkDOWN.
 
-Lista de comandos de MarkDOWN:
+## Lista de comandos de MarkDOWN:
 
 ## Para crear encabezados:
 
-![Foto](encabezado.PNG)
+![Foto](FotosApuntes/encabezado.PNG)
 
 ### Resultado:
 
@@ -37,7 +37,7 @@ Lista de comandos de MarkDOWN:
 
 ## Para crear textos según cursiva-negrita:
 
-![foto](textos.PNG)
+![foto](FotosApuntes/textos.PNG)
 
 ### Resultado:
 
@@ -53,7 +53,7 @@ __Este texto aparece en negrita__
 
 ## Para crear listas no-ordenadas/ordenadas:
 
-![Foto](Lista.PNG)
+![Foto](FotosApuntes/Lista.PNG)
 
 ### Resultado:
 
@@ -76,7 +76,7 @@ Lista desordenada:
 
 ## Para crear una secuencia de códigos HTML y poder copiarlos:
 
-![Fotos](HTML.PNG)
+![Fotos](FotosApuntes/HTML.PNG)
 
 ### Resultado:
 
@@ -89,16 +89,16 @@ Lista desordenada:
 
 ## Para poner links o fotos:
 
-![Foto](Links.PNG)
+![Foto](FotosApuntes/Links.PNG)
 
 ### Resultado:
 
 [Enclace a wikipedia](URL "https://es.wikipedia.org/wiki/Wikipedia:Portada")
-![Foto](1200px-Wikipedia-logo-v2.svg.png)
+![Foto](FotosApuntes/1200px-Wikipedia-logo-v2.svg.png)
 
 ## Para crear tablas:
 
-![](tabla.PNG)
+![](FotosApuntes/tabla.PNG)
 
 ### Resultado:
 
@@ -109,11 +109,62 @@ Lista desordenada:
 | Item3        | Lapices      | 50 euros     |
 
 
-# GitHUB y CMD:
+# GitHUB y CMD
+
+[GitHub](URL "https://github.com/") es un sitio "social coding" dónde te permite subir repositorios de código para almacenarlo en el sistema de controles [GIT](URL "https://git-scm.com/").
+
+![](FotosApuntes/GIT.PNG)
+
+## Utilización de GIT en CMD
+Para acceder al CMD debemos ir al **WINDOWS** y escribir CMD que es la ventana de comandos de Windows.
+
+![](FotosApuntes/cmd.PNG)
+
+Una vez accedido, nos aparecerá una ventana con el símbolo del sistemade.
+
+![](FotosApuntes/cmd2.PNG)
+
+Tenemos el caso que nos hemos creado un repositorio de prueba llamado _aprendizajeMarkdown_. Nos interesa hacer una copia de este repositorio en nuestro equipo. Primero de todo copiamos la URL del repositorio. Recalcar que anteriormente hemos creado una carpeta llamado _repositorios GIT_ dentro del disco C:.
+
+![](FotosApuntes/copialinkrepositorio.PNG)
+
+Una vez copiado el link del repositorio, nos dirigimos al CMD y navegamos por el de la siguiente manera:
+### Moverse por CMD por rutas:
+
+cd.. --> Ir una carpeta atrás.
+
+dir --> "Directory" --> Mostrar todo lo que contiene la carpeta.
+
+Mkdir --> Crear una carpeta.
+
+Rd --> Eliminar un archivo.
+
+Cd ./“nombre de la carpeta” --> Entrar en la carpeta directamente si necesidad de pasa una por una.
+
+Una vez sabemos esto, nos interesa ir al disco C:, repositorios GIT y clonar el repositorio que hemos copiado de la siguiente manera:
+
+![](FotosApuntes/cmd3.PNG)
+
+Hemos llegado al disco C: y procedemos a entrar a _repositorios GIT_ y clonar con el comando _git clone_ que sirve para clonar el repositorio, de esta manera crea una carpeta con todo lo contenido del repositorio.
+
+![](FotosApuntes/cmd4.PNG)
+
+![](FotosApuntes/carpeta1.PNG)
+
+Para poder subir los archivos que vayamos añadiendo en la carpeta _aprendizajeMarkdown_ a GitHUB debemos primero sincronizar la carpeta con el repositorio.
+En este caso hemos añadido un bloc de notas llamado _ArchivoPrueba_.
+
+![](FotosApuntes/carpeta2.PNG)
+
+Para sincronizarlo debemos poner el comando _git init_, después con el comando _git add ArchivoPrueba.txt_ estamos añadiendo el archivo prueba. Una vez añadido el archivo, lo empaquetamos con el comando _git commit -m "descripción"_, en este caso nuestra descripción es "añadir archivo". Empaquetarlo es poner todos los archivos añadidos en un paquete. Por último subimos el archivo con el comando _git push origin main_ que nos subirá el archivo a nuestro repositorio.
+
+![](FotosApuntes/cmd5.PNG)
+
+![](FotosApuntes/archivoprueba.PNG)
 
 # HTML:
 
-**HTML** és un lenguaje de marcas que se utiliza para estructurar y desplegar una página web y sus contenidos.
+**HTML** es un lenguaje de marcas que se utiliza para estructurar y desplegar una página web y sus contenidos.
 En nuestro caso para utilizar html descargaremos [VISUAL STUDIO CODE](URL "https://code.visualstudio.com/"), un editor de codigo fuente que nos dejará interactuar con HTML.
 
 ## BÁSICO HTML:
@@ -166,7 +217,7 @@ En nuestro caso para utilizar html descargaremos [VISUAL STUDIO CODE](URL "https
 
 ### RESULTADO:
 
-![FOTO](ApuntesHTML.PNG)
+![FOTO](FotosApuntes/ApuntesHTML.PNG)
 
 
 
