@@ -98,7 +98,7 @@ Lista desordenada:
 
 ## Para crear tablas:
 
-![](FotosApuntes/tabla.PNG)
+![](FotosApuntes/Tabla.PNG)
 
 ### Resultado:
 
