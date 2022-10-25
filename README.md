@@ -221,6 +221,53 @@ En nuestro caso para utilizar html descargaremos [VISUAL STUDIO CODE](URL "https
 
 ![FOTO](FotosApuntes/ApuntesHTML.PNG)
 
+# APUNTES CSS
 
+CSS es un lenguaje de marcas que da estilo a las páginas web que funciona junto a HTML
+
+```html
+
+<!DOCTYPE html>
+<html lang="en">                                                                            <!-- Dos maneras de atacar-->
+<head>                                                                                      <!-- Desde las etiquetas <div (característica)>-->
+    <meta charset="UTF-8">                                                                  <!-- De manera global -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">                                   
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apuntes CSS</title>
+<!-- Desde el encabezado ponemos "style" para afectar de manera global-->
+<!-- En este caso hacemos que la etiqueta "p" le afecte de manera global a expcepción de aquellas etiquietas que ya 
+lleven una caracerística, ya que a ellos les da prioridad. -->
+    <style>
+       p {
+            text-decoration: underline;                                         
+            color: darkblue;
+        }
+    </style>
+
+<link rel="stylesheet" href="estilo.css">   <!-- Dentro del encabezado podemos crear una hoja de estilos con la extensión css, de manera que
+                                                podemos vincularla con la etiqueta link -->
+
+</head>
+
+
+<body>
+<!-- Apuntes CSS -->    
+
+<DIV> <!-- Bloques -->              
+<p>El holograma finalmente ha sido desactivado, piensas en medio de la calle. ¿Y dónde se ha ido todo el mundo? Nadie aparece. Los dueños de las casas se han ido y sus cosas flotan haciendo ondas de luz. Se ve muy hermoso el pueblo así, sin nadie y con todas estas burbujas coloridas a las que puedes atravesar sin ningún problema. Bajas en la bicicleta, pero no llegas muy lejos.</p>
+</DIV> <!-- Fin Bloques -->
+
+<!--Dentro de la etiqueta poner style para añadirle estilo. En este caso "text-decoration: underline" es subrallar.-->
+<p style="text-decoration: underline; color: aqua;">El holograma finalmente ha sido desactivado, piensas en medio de la calle. ¿Y dónde se ha ido todo el mundo? Nadie aparece. Los dueños de las casas se han ido y sus cosas flotan haciendo ondas de luz. Se ve muy hermoso el pueblo así, sin nadie y con todas estas burbujas coloridas a las que puedes atravesar sin ningún problema. Bajas en la bicicleta, pero no llegas muy lejos.</p>
+
+
+</body>
+
+
+</html>
+
+```
+
+### RESULTADO
 
 
