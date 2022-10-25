@@ -222,6 +222,9 @@ En nuestro caso para utilizar html descargaremos [VISUAL STUDIO CODE](URL "https
 ![FOTO](FotosApuntes/ApuntesHTML.PNG)
 
 # APUNTES CSS
+
+Es un lenguaje de marcas que se utiliza para dar estilo a la página. Va en junto HTML.
+
 ```html
 <!DOCTYPE html>                                                                             <!-- Apuntes CSS -->    
 <html lang="en">                                                                            <!-- Dos maneras de atacar-->
