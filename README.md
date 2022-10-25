@@ -222,27 +222,75 @@ En nuestro caso para utilizar html descargaremos [VISUAL STUDIO CODE](URL "https
 ![FOTO](FotosApuntes/ApuntesHTML.PNG)
 
 # APUNTES CSS
-
-CSS es un lenguaje de marcas que da estilo a las páginas web que funciona junto a HTML
-
 ```html
-
-<!DOCTYPE html>
+<!DOCTYPE html>                                                                             <!-- Apuntes CSS -->    
 <html lang="en">                                                                            <!-- Dos maneras de atacar-->
 <head>                                                                                      <!-- Desde las etiquetas <div (característica)>-->
     <meta charset="UTF-8">                                                                  <!-- De manera global -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">                                   
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apuntes CSS</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+    
 <!-- Desde el encabezado ponemos "style" para afectar de manera global-->
 <!-- En este caso hacemos que la etiqueta "p" le afecte de manera global a expcepción de aquellas etiquietas que ya 
 lleven una caracerística, ya que a ellos les da prioridad. -->
-    <style>
-       p {
+<!-- El punto "." es para aquellos que lleven la etiqueta "class"-->
+<!-- La almoadilla "#" es para aquellos que lelven la etiqueda de "ID"-->
+<!-- el asterisco "*" afecta a TODO el documento-->
+<!-- Si ponemos una "," separa los selectores y les afecta por igual-->
+<!-- Los "div>em" van a estar afectados por solamente aquellos que tengan esas etiquetas, los demás "em" no serán afectadas.-->
+<!-- El "+" es para quellos afectados solamente entre dos etiquetas, sin afectar a los demás que sean de la misma -->
+<!-- p: :fisrt-lane, solamente afecta a la primera línia de los párrafos.-->
+<!-- Margin es para darle margen tiene margin-(top)(left)(right)(bottom) px, cm, %-->
+<!-- Border, es un contenedor y es la línia que define donde se separa el div tiene border-(top)(left)(right)(bottom) -->
+<!-- Padding, la separación entre una etiqueta y el elemento div-->
+<!-- Con el google fonts se puede cambiar la fuente de letra copiando el link y añadiendo la característica a la etiqueta -->
+
+<style>
+        *{
+            text-decoration: overline;
+            color: rgba(155, 4, 210, 0.507);
+        }
+
+        .primerelemento{
+            text-decoration: underline;
+            color: darkorange;
+        }
+        #primerelemento {
+            text-decoration: underline;
+            color: blueviolet;
+        }
+       h1, p {
+            font-family: 'Roboto', sans-serif;
             text-decoration: underline;                                         
             color: darkblue;
         }
-    </style>
+
+        div>em{
+            text-decoration: underline;
+            color: gold;
+        }
+        h1+h2 {
+            margin-top: 50px;
+        }
+
+        p::first-line {
+            color: lawngreen;
+        }
+
+        div {
+            
+        border-color: saddlebrown;
+        border-width: 5px;
+        border-style: dotted;
+        margin: 20px;
+        padding: 20px;
+
+        }
+</style>
 
 <link rel="stylesheet" href="estilo.css">   <!-- Dentro del encabezado podemos crear una hoja de estilos con la extensión css, de manera que
                                                 podemos vincularla con la etiqueta link -->
@@ -251,7 +299,9 @@ lleven una caracerística, ya que a ellos les da prioridad. -->
 
 
 <body>
-<!-- Apuntes CSS -->    
+
+
+<h1>BUENAS NOCHES</h1>
 
 <DIV> <!-- Bloques -->              
 <p>El holograma finalmente ha sido desactivado, piensas en medio de la calle. ¿Y dónde se ha ido todo el mundo? Nadie aparece. Los dueños de las casas se han ido y sus cosas flotan haciendo ondas de luz. Se ve muy hermoso el pueblo así, sin nadie y con todas estas burbujas coloridas a las que puedes atravesar sin ningún problema. Bajas en la bicicleta, pero no llegas muy lejos.</p>
@@ -260,11 +310,32 @@ lleven una caracerística, ya que a ellos les da prioridad. -->
 <!--Dentro de la etiqueta poner style para añadirle estilo. En este caso "text-decoration: underline" es subrallar.-->
 <p style="text-decoration: underline; color: aqua;">El holograma finalmente ha sido desactivado, piensas en medio de la calle. ¿Y dónde se ha ido todo el mundo? Nadie aparece. Los dueños de las casas se han ido y sus cosas flotan haciendo ondas de luz. Se ve muy hermoso el pueblo así, sin nadie y con todas estas burbujas coloridas a las que puedes atravesar sin ningún problema. Bajas en la bicicleta, pero no llegas muy lejos.</p>
 
+<ol>
+<li>PRIMERO</li>
+<LI>SEGUNDO</LI>
+<LI>TERCERO</LI>
+</ol>
+
+
+<!-- Ponemos id para ponerle identificación a nuestra etiqueta, de manera que podemos darle estilos solamente a esta etiqueta, etc. -->
+<p id="primerelemento"> HOLA BUENAS TARDES </p>
+<!-- Atributo de clase, funciona como la id pero en la hoja de estilos se le pone un . -->
+<p class="primerelemento" > HOLA BUENAS TARDES </p>
+
+<div>
+    <em>Primer párrafo</em>
+    <p>Segundo elemento</p>
+</div>
+
+<em>Línia separada</em>
+
+<H1>BUENAS</H1>
+<h2>HOLA</h2>
+<h2>ADIOS</h2>
 
 </body>
-
-
 </html>
+
 
 ```
 
