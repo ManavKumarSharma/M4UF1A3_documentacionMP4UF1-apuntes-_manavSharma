@@ -344,4 +344,5 @@ lleven una caracerística, ya que a ellos les da prioridad. -->
 
 ### RESULTADO
 
+![FOTO](FotosApuntes/CSSAPUNTES.PNG)
 
