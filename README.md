@@ -342,6 +342,23 @@ lleven una caracerística, ya que a ellos les da prioridad. -->
 
 ```
 
+### HOJA DE ESTILOS VINCULADO CON EL DOCUMENTO HTML
+
+```css
+p {
+    text-decoration: underline;         
+    color: brown;
+
+}
+
+ol {
+    text-decoration: underline;
+    color: aqua;
+
+}
+
+```
+
 ### RESULTADO
 
 ![FOTO](FotosApuntes/CSSAPUNTES.PNG)
