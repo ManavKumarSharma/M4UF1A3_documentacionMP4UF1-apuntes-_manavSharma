@@ -343,7 +343,7 @@ Existen dos tipos de identificadores.
 
 En este caso vemos como los identificadores afectan de manera global aquellos que lleven el mismo atributo y nombre (como en el ```IDENTIFICADOR_1``` que afecta a todos los ```IDENTIFICADOR_1``` que lleven una id) y no afectan en aquellas que no llevan aquel identificador como en el caso de ```<p>ESTER</p>```.
 
-En el caso que modifiquemos de manera global el documento con ```*```, los identificadores tendrán prioridad por encima del ```*```.
+En el caso que modifiquemos de manera global el documento con ```*```, los identificadores tendrán prioridad.
 
 ```html
 <!DOCTYPE html>
@@ -383,3 +383,5 @@ En el caso que modifiquemos de manera global el documento con ```*```, los ident
 
 ```
 ![FOTO](FotosApuntes/ENCIMA_DE_TODO.PNG)
+
+
