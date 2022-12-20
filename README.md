@@ -340,3 +340,46 @@ Existen dos tipos de identificadores.
 ```
 
 ![FOTO](FotosApuntes/NOMBRES_IDENTIFICADORES.PNG)
+
+En este caso vemos como los identificadores afectan de manera global aquellos que lleven el mismo atributo y nombre (como en el ```IDENTIFICADOR_1``` que afecta a todos los ```IDENTIFICADOR_1``` que lleven una id) y no afectan en aquellas que no llevan aquel identificador como en el caso de ```<p>ESTER</p>```.
+
+En el caso que modifiquemos de manera global el documento con ```*```, los identificadores tendrán prioridad por encima del ```*```.
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="estilo.css">´
+    <style>
+    * {
+        color: aqua;
+    }
+
+    .IDENTIFICADOR_2 {
+        color: blue;
+    }
+
+    #IDENTIFICADOR_1 {
+        color: brown;
+    }
+    
+    </style>
+</head>
+<body>
+<p id="IDENTIFICADOR_1">MANUEL</p>
+<p id="IDENTIFICADOR_1">DYLAN</p>
+<p class="IDENTIFICADOR_2">MARC</p>
+<p class="IDENTIFICADOR_2">CARLA</p>
+<p>MARIA</p>
+<P>ESTER</P>
+<P>ALBERTO</P>
+
+</body>
+</html>
+
+```
+![FOTO](FotosApuntes/ENCIMA_DE_TODO.PNG)
