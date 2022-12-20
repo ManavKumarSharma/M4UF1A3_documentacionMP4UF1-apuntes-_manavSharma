@@ -224,11 +224,13 @@ En nuestro caso para utilizar html descargaremos [VISUAL STUDIO CODE](URL "https
 # APUNTES CSS
 
 Es un lenguaje de marcas que se utiliza para dar estilo a la página y va junto a un documento HTML. Hay dos maneras de atacar:
-1. Desde las etiquetas en el documento html, por ejemplo: \<p (característica)>\</p>. Esto hará que solamente le etiqueta modificada se verá afectada y no las demás.
+1. Desde las etiquetas en el documento html, por ejemplo: \<p (nombre_atributo_característica_valor)>\</p>. Esto hará que solamente le etiqueta modificada se verá afectada y no las demás.
 ```html
 <p style="color:red;">HOLA BUENOS DÍAS</p>
 <p>HOLA BUENOS DÍAS</p>
 ```
+![FOTO](FotosApuntes/HOLA_BUENOS_DIAS.PNG)
+
 2. De manera global:
     1. Por el encabezado (```head```):
 ```html
@@ -253,9 +255,88 @@ Es un lenguaje de marcas que se utiliza para dar estilo a la página y va junto 
 </html>
 
 ```
+![FOTO](FotosApuntes/HOLA_BUENAS_NOCHES.PNG)
+
    ii. Por una hoja de estilos externa:
 ```html
     <link rel="stylesheet" href="estilo.css">
 ```
+![FOTO](FotosApuntes/HOJA_EXTERNO.PNG)
+![FOTO](FotosApuntes/HOJA_EXTERNO2.PNG)
+
 Añadiendo este código al ```head``` del documento html, lo que hacemos es vincularlo a un documento de hoja de estilos externa que finalice con la extension ".css".
-Tanto como crear el ```style``` en el encabezado como en una hoja de estilos externa, harán la misma función. afectar de manera global a todas las etiquetas a **excepción** de aquellas que han sido modificadas desde la etiqueta.
+Tanto como crear el ```style``` en el encabezado como en una hoja de estilos externa, harán la misma función, afectar de manera global a todas las etiquetas a **excepción** de aquellas que han sido modificadas desde la etiqueta.
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="estilo.css">´
+    <style>
+        p  {
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+<p>HOLA BUENAS NOCHES</p>
+<P>HOLA BUENAS TARDES</P>
+<P style="color:red ;">HOLA BUENOS DÍAS</P>
+</body>
+</html>
+```
+
+![FOTO](FotosApuntes/DIFERENCIA_EXTERNO.PNG)
+
+### IDENTIFICADORES
+Los identificadores son atributos que su función es identificar elementos del documento HTML y modificarlos por separado para que no afecten a otras etiquetas. 
+Existen dos tipos de identificadores.
+1. Identificador ```id```: Es representada en la hoja de estilos con una ```#```
+2. Identificador ```class```: Es representada en la hoja de estilos con un ```.```
+#### EJEMPLO
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="estilo.css">´
+    <style>
+        #IDENTIFICADOR_1 {
+            color: red;
+        }
+
+        #IDENTIFICADOR_2 {
+            color: green;
+        }
+
+        .IDENTIFICADOR_3 {
+            color: yellow;
+        }
+
+        .IDENTIFICADOR_4 {
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+<p id="IDENTIFICADOR_1">MANUEL</p>
+<p id="IDENTIFICADOR_2">DYLAN</p>
+<p class="IDENTIFICADOR_3">MARC</p>
+<p class="IDENTIFICADOR_4">CARLA</p>
+<p id="IDENTIFICADOR_1">MARIA</p>
+<P>ESTER</P>
+
+</body>
+</html>
+
+```
+
+![FOTO](FotosApuntes/NOMBRES_IDENTIFICADORES.PNG)
