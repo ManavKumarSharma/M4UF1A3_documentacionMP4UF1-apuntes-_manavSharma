@@ -422,5 +422,6 @@ Si ponemos una "," separa los selectores y les afecta por igual.
 ```
 ![FOTO](FotosApuntes/SEPARADOR.PNG)
 
-#### DESCENDIENTES
+#### SELECTOR HIJOS Y DESCENDIENTES
+
 
