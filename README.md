@@ -224,7 +224,7 @@ En nuestro caso para utilizar html descargaremos [VISUAL STUDIO CODE](URL "https
 # APUNTES CSS
 
 Es un lenguaje de marcas que se utiliza para dar estilo a la página y va junto a un documento HTML. Hay dos maneras de atacar:
-1. Desde las etiquetas en el documento html, por ejemplo: \<p (nombre_atributo_característica_valor)>\</p>. Esto hará que solamente le etiqueta modificada se verá afectada y no las demás.
+1. Desde las etiquetas en el documento html, por ejemplo: \<p (nombre_atributo_característica_valor)>\</p>. Esto hará que solamente la etiqueta modificada se verá afectada y no las demás.
 ```html
 <p style="color:red;">HOLA BUENOS DÍAS</p>
 <p>HOLA BUENOS DÍAS</p>
@@ -265,7 +265,7 @@ Es un lenguaje de marcas que se utiliza para dar estilo a la página y va junto 
 ![FOTO](FotosApuntes/HOJA_EXTERNO2.PNG)
 
 Añadiendo este código al ```head``` del documento html, lo que hacemos es vincularlo a un documento de hoja de estilos externa que finalice con la extension ".css".
-Tanto como crear el ```style``` en el encabezado como en una hoja de estilos externa, harán la misma función, afectar de manera global a todas las etiquetas a **excepción** de aquellas que han sido modificadas desde la etiqueta.
+Tanto como crear el ```style``` en el encabezado como en una hoja de estilos externa, harán la misma función, afectar de manera global a todas los selectores a **excepción** de aquellas que han sido modificadas desde la etiqueta.
 
 ```html
 <!DOCTYPE html>
@@ -384,4 +384,43 @@ En el caso que modifiquemos de manera global el documento con ```*```, los ident
 ```
 ![FOTO](FotosApuntes/ENCIMA_DE_TODO.PNG)
 
+Si ponemos una "," separa los selectores y les afecta por igual.
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="estilo.css">´
+    <style>
+    * {
+        color: aqua;
+    }
+
+    .IDENTIFICADOR_2, #IDENTIFICADOR_1 {
+        color: blue;
+    }
+
+
+    
+    </style>
+</head>
+<body>
+<p id="IDENTIFICADOR_1">MANUEL</p>
+<p id="IDENTIFICADOR_1">DYLAN</p>
+<p class="IDENTIFICADOR_2">MARC</p>
+<p class="IDENTIFICADOR_2">CARLA</p>
+<p>MARIA</p>
+<P>ESTER</P>
+<P>ALBERTO</P>
+
+</body>
+</html>
+```
+![FOTO](FotosApuntes/SEPARADOR.PNG)
+
+#### DESCENDIENTES
 
