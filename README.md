@@ -293,7 +293,7 @@ Tanto como crear el ```style``` en el encabezado como en una hoja de estilos ext
 ![FOTO](FotosApuntes/DIFERENCIA_EXTERNO.PNG)
 
 ### IDENTIFICADORES
-Los identificadores son atributos que su función es identificar elementos del documento HTML y modificarlos por separado para que no afecten a otras etiquetas. 
+Los identificadores son selectores que su función es identificar elementos del documento HTML y modificarlos por separado para que no afecten a otras etiquetas. 
 Existen dos tipos de identificadores.
 1. Identificador ```id```: Es representada en la hoja de estilos con una ```#```
 2. Identificador ```class```: Es representada en la hoja de estilos con un ```.```
