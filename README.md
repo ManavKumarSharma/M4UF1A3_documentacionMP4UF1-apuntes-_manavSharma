@@ -716,4 +716,18 @@ Afectará únicamente a la primera línia de la *página web*.
 ```
 ![FOTO](FotosApuntes/PADDING.PNG)
 
+### GOOGLE FONTS
+
+Gracias a [Google Fonts](URL "https://fonts.google.com/") podemos modificar la fuente de letra.
+
+1. Entramos a la página web y seleccionamos el tipo de fuente que deseamos:
+
+![FOTO](FotosApuntes/GOOGLEFONTS1.PNG)
+
+2. eL primer link sirve para colocarlo en el head del documento HTML. El segundo para colocarlo a una hoja de estilos externa.
+
+![FOTO](FotoApuntes/GOOGLEFONTS2.PNG)
+
+
+
 
