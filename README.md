@@ -758,7 +758,7 @@ En caso de que usemos el código en el head del html:
 </body>
 </html>
 ```
-![FOTO](FotoApuntes/GOOGLEFONTS3.PNG)
+![FOTO](FotoApuntes/GOOGLEFONTS4.PNG)
 
 En caso que usemos el código en una hoja de estilos externa:
 
