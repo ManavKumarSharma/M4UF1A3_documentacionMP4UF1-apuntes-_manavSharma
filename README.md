@@ -773,8 +773,7 @@ h1 {
 
 ```
 
-![FOTO](FotoApuntes/GOOGLEFONTS3.PNG)
-
+![Foto](FotosApuntes/GOOGLEFONTS3.PNG)
 
 
 
