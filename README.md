@@ -224,7 +224,7 @@ En nuestro caso para utilizar html descargaremos [VISUAL STUDIO CODE](URL "https
 # APUNTES CSS
 
 Es un lenguaje de marcas que se utiliza para dar estilo a la página y va junto a un documento HTML. Hay dos maneras de atacar:
-1. Desde las etiquetas en el documento html, por ejemplo: \<p (nombre_atributo_característica_valor)>\</p>. Esto hará que solamente la etiqueta modificada se verá afectada y no las demás.
+1. Desde las etiquetas en el documento html, por ejemplo: \<p (nombre_atributo_característica_valor)>\</p>. Esto hará que solamente la etiqueta modificada se verá afectada y no las demás (También es conocido como selector elemento).
 ```html
 <p style="color:red;">HOLA BUENOS DÍAS</p>
 <p>HOLA BUENOS DÍAS</p>
@@ -292,11 +292,12 @@ Tanto como crear el ```style``` en el encabezado como en una hoja de estilos ext
 
 ![FOTO](FotosApuntes/DIFERENCIA_EXTERNO.PNG)
 
-### IDENTIFICADORES
+## IDENTIFICADORES
 Los identificadores son selectores que su función es identificar elementos del documento HTML y modificarlos por separado para que no afecten a otras etiquetas. 
 Existen dos tipos de identificadores.
 1. Identificador ```id```: Es representada en la hoja de estilos con una ```#```
 2. Identificador ```class```: Es representada en la hoja de estilos con un ```.```
+3. Identificador de ```elementos```: Lo hemos hablado anteriormente, permite modificar el estilo dentro de las etiquetas.
 #### EJEMPLO
 
 ```html
@@ -422,6 +423,297 @@ Si ponemos una "," separa los selectores y les afecta por igual.
 ```
 ![FOTO](FotosApuntes/SEPARADOR.PNG)
 
-#### SELECTOR HIJOS Y DESCENDIENTES
+#### SELECTORES AVANZADOS
+1. Selector universal ```*```: Sirve para seleccionar todos los elementos de la página. Ejemplo:
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="estilo.css">´
+    <style>
+  
+    * {
+        color: red;
+    }
+    
+    </style>
+</head>
+<body>
+<p id="IDENTIFICADOR_1">MANUEL</p>
+<p id="IDENTIFICADOR_1">DYLAN</p>
+<p class="IDENTIFICADOR_2">MARC</p>
+<p class="IDENTIFICADOR_2">CARLA</p>
+<p>MARIA</p>
+<P>ESTER</P>
+<P>ALBERTO</P>
+
+</body>
+</html>
+```
+![FOTO](FotosApuntes/TODO.PNG)
+
+2. Selectores de atributos: Selecciona elementos en función de los atributos que tienen. Ejemplo:
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="estilo.css">
+    <style>
+  a[href] {
+    color: green;
+  }
+  
+    </style>
+</head>
+<body>
+
+<a href="google.com">google</a>
+</body>
+</html>
+```
+
+![FOTO](FotosApuntes/google.PNG)
+
+3. Selectores de hijos: Aquellos que son hijos directos de otros elementos. Es decir, es cuando tenemos un elemento 'a' que adentro tiene hijos y su hijo se llama 'b'. Entonces dependen directamente. Si este elemento 'b', a su vez, tiene hijos 'c', no puede depender del primer elemento. Ejemplo:
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="estilo.css">
+    <style>
+  
+        div > p {
+            color:red ;
+        }
+    </style>
+</head>
+<body>
+
+    <div>
+        <p>que tal</p>
+        <ol>
+            <li>goodbye</li>
+            <li>Adios</li>
+            <p>hola</p>
+        </ol>
+
+    </div>
+
+</body>
+</html>
+```
+
+![FOTO](FotosApuntes/HIJOS.PNG)
+
+4. Selector de descendientes: A diferencia de los selectores hijos, este afecta directamente a toda la jerarquía. Ejemplo:
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="estilo.css">
+    <style>
+  
+        div  p {
+            color:red ;
+        }
+    </style>
+</head>
+<body>
+
+    <div>
+        <p>que tal</p>
+        <ol>
+            <li>goodbye</li>
+            <li>Adios</li>
+            <p>hola</p>
+        </ol>
+
+    </div>
+
+</body>
+</html>
+```
+![FOTO](FotosApuntes/DESCENDIENTE.PNG)
+
+5. Selector de hermanos adyacentes: Afecta a aquellos elementos que estén al mismo nivel de la jerarquía. El "+" es para quellos afectados solamente entre dos etiquetas, sin afectar a los demás que sean de la misma.
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="estilo.css">
+    <style>
+        h1+h2 {
+            color: blue;
+        }
+
+
+    </style>
+</head>
+<body>
+    <h1>HOLA</h1>
+    <h2>ADIÓS</h2>
+    <h1>HELLO</h1>
+    <h3>GOODBYE</h3>
+    <h2>google</h2>
+
+
+</body>
+</html>
+````
+
+![FOTO](FotosApuntes/HERMANOS.PNG)
+
+6. Pseudoclass: Una pseudoclase es un selector que marca los elementos que están en un estado específico, por ejemplo, los que son el primer elemento de su tipo, o aquellos por los que el cursor les pasa por encima. 
+Hay diversos casos:
+* :Link: El estado normal por defecto de los enlaces. Tal y como se ven por primera vez.
+* :visited: Enlaces que ya se han visitado con el navegador que se está utilizando.
+* :focus: Enlaces (o campos de formularios, o cualquier otra cosa) que tienen en ese momento el cursor en su interior.
+* :hover: Enlaces que tienen en este momento el puntero del ratón sobre ellos.
+
+7. Pseudoelemento: Permiten añadir estilos en una parte en concreta del documento. Ejemplo:
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="estilo.css">
+    <style>
+        p::first-line {
+            color:green ;
+        }
+
+    </style>
+</head>
+<body>
+ 
+    <p>HOLAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        ADIOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOS
+    </p>
+
+</body>
+</html>
+
+```
+Afectará únicamente a la primera línia de la *página web*.
+
+![FOTO](FotosApuntes/pseudoelemento.PNG)
+
+### COMPOSICIÓN
+* Margin es para darle margen tiene margin-(top)(left)(right)(bottom) px, cm, %.
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="estilo.css">
+    <style>
+        h1{
+            margin-top: 50px;
+        }
+
+    </style>
+</head>
+<body>
+ 
+    <h1>HOLA</h1>
+</body>
+</html>
+```
+![FOTO](FotosApuntes/MARGIN.PNG)
+
+* Border, es un contenedor y es la línia que define donde se separa el div tiene border-(top)(left)(right)(bottom).
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="estilo.css">
+    <style>
+       
+        div {
+            border: solid red;
+        }
+
+    </style>
+</head>
+<body>
+    <div>
+        <h1>HOLA</h1>
+    </div>
+    
+</body>
+</html>
+
+```
+![FOTO](FotosApuntes/BORDER.PNG)
+
+* Padding, la separación entre una etiqueta y el elemento div.
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="estilo.css">
+    <style>
+        h1{
+            padding: 20px;
+            
+        }
+
+        div {
+            border: solid red;
+        }
+
+    </style>
+</head>
+<body>
+    <div>
+        <h1>HOLA</h1>
+    </div>
+    
+</body>
+</html>
+```
+![FOTO](FotosApuntes/PADDING.PNG)
 
 
