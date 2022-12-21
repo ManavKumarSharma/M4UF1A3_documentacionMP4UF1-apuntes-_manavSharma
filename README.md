@@ -759,7 +759,7 @@ En caso de que usemos el código en el head del html:
 </html>
 ```
 
-![FOTO](FotoApuntes/GOOGLEFONTS3.PNG)
+![Foto](FotosApuntes/GOOGLEFONTS3.PNG)
 
 En caso que usemos el código en una hoja de estilos externa:
 
