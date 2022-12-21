@@ -726,7 +726,7 @@ Gracias a [Google Fonts](URL "https://fonts.google.com/") podemos modificar la f
 
 2. eL primer link sirve para colocarlo en el head del documento HTML. El segundo para colocarlo a una hoja de estilos externa.
 
-![FOTO](FotoApuntes/GOOGLEFONTS2.PNG)
+![FOTO](FotosApuntes/GOOGLEFONTS2.PNG)
 
 En caso de que usemos el código en el head del html:
 
